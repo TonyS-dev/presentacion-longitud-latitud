@@ -143,11 +143,59 @@
             font-size: 1.2em;
             margin: 20px 0;
         }
+        
+        .references-section {
+            max-height: 70vh;
+            overflow-y: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .reference-item {
+            text-align: left;
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+        
+        .reference-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(5px);
+        }
+        
+        .reference-author {
+            font-weight: bold;
+            color: #FFD700;
+        }
+        
+        .reference-title {
+            font-style: italic;
+            color: #E8F0FF;
+            margin: 5px 0;
+        }
+        
+        .reference-details {
+            color: #C5D6FF;
+            font-size: 0.95em;
+        }
+        
+        .references-intro {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            color: #FFD700;
+        }
     </style>
 </head>
 <body>
     <div class="slide-counter">
-        <span id="current-slide">1</span> / 5
+        <span id="current-slide">1</span> / 6
     </div>
     
     <div class="presentation-container">
@@ -219,6 +267,63 @@
             </ul>
             <div class="coords-example">
                 🌟 "Sin coordenadas geográficas, no existiría el mundo conectado que conocemos hoy"
+            </div>
+        </div>
+        
+        <!-- Diapositiva 6: Referencias -->
+        <div class="slide">
+            <h2>📚 Referencias Bibliográficas</h2>
+            
+            <p class="references-intro">Fuentes académicas y recursos consultados para esta presentación</p>
+            
+            <div class="references-section">
+                <div class="reference-item">
+                    <div class="reference-author">Snyder, J. P.</div>
+                    <div class="reference-title">Map Projections: A Working Manual</div>
+                    <div class="reference-details">U.S. Geological Survey Professional Paper 1395. Washington: U.S. Government Printing Office. (1987)</div>
+                </div>
+                
+                <div class="reference-item">
+                    <div class="reference-author">Torge, W. & Müller, J.</div>
+                    <div class="reference-title">Geodesy, 4th Edition</div>
+                    <div class="reference-details">Walter de Gruyter GmbH & Co KG. Berlin/Boston. (2012)</div>
+                </div>
+                
+                <div class="reference-item">
+                    <div class="reference-author">Hofmann-Wellenhof, B., Lichtenegger, H., & Wasle, E.</div>
+                    <div class="reference-title">GNSS – Global Navigation Satellite Systems: GPS, GLONASS, Galileo, and more</div>
+                    <div class="reference-details">Springer-Verlag Wien. (2008)</div>
+                </div>
+                
+                <div class="reference-item">
+                    <div class="reference-author">Vaníček, P. & Krakiwsky, E. J.</div>
+                    <div class="reference-title">Geodesy: The Concepts, 2nd Edition</div>
+                    <div class="reference-details">North-Holland Publishing Company. Amsterdam. (1986)</div>
+                </div>
+                
+                <div class="reference-item">
+                    <div class="reference-author">National Geospatial-Intelligence Agency (NGA)</div>
+                    <div class="reference-title">World Geodetic System 1984: Its Definition and Relationships with Local Geodetic Systems</div>
+                    <div class="reference-details">Technical Report TR8350.2, 3rd Edition. (2014)</div>
+                </div>
+                
+                <div class="reference-item">
+                    <div class="reference-author">Seeber, G.</div>
+                    <div class="reference-title">Satellite Geodesy: Foundations, Methods, and Applications, 2nd Edition</div>
+                    <div class="reference-details">Walter de Gruyter. Berlin/New York. (2003)</div>
+                </div>
+                
+                <div class="reference-item">
+                    <div class="reference-author">Clarke, A. R. de</div>
+                    <div class="reference-title">Figure of the Earth</div>
+                    <div class="reference-details">Ordnance Survey Professional Papers, New Series No. 39. Southampton. (1880)</div>
+                </div>
+                
+                <div class="reference-item">
+                    <div class="reference-author">International Association of Geodesy (IAG)</div>
+                    <div class="reference-title">Geodetic Reference System 1980</div>
+                    <div class="reference-details">Journal of Geodesy, 54(3), 395-405. (1980)</div>
+                </div>
             </div>
         </div>
     </div>
